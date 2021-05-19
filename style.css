@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dnone{
+    display: none !important;
+}
+
+.startscreen{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #336699;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pokemonpage {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.pokedex {
+    min-height: 50vh;
+    min-width: 100vw;
+    background-color: #Fb6c6c;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.info-container {
+    background-color: white;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    min-height: 100px;
+    min-width: 100vw;
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+}
+
+.pokemonimage {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-top: -100px;
+}
+
+.home-button{
+    display: flex;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 32px;
+    left: 32px;
+}
+
+.home-button:hover{
+    opacity: 0.7;
+}
+
+.home-img{
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    margin-right: 12px;
+}

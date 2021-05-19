@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+
+</head>
+
+<body onload="loadPokemon()">
+
+    <!-- ___________________________________________________________________________________ -->
+    <div id="startscreen" class="startscreen">
+        <h1>POKEDEX</h1>
+        <input id="selectedPokemon" type="text" placeholder="name of the pokemon"><button onclick="showPokemonpage()">search</button>
+    </div>
+
+    <!-- __________________________________________________________________________________________ -->
+    <div id="pokemonpage" class="pokemonpage dnone">
+        <div class="home-button">
+        <img onclick="showStartscreen()" src="home.png" class="home-img"> Zurück
+        </div>
+        <div id="pokedex" class="pokedex">
+            <h1 id="pokemonName">Name</h1>
+        </div>
+
+        <div class="info-container">
+            <img id="pokemonimage" class="pokemonimage">
+        </div>
+    </div>
+    <!-- ____________________________________________________________________________________- -->
+
+</body>
+
+</html>
