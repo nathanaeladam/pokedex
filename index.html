@@ -5,25 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>POKEDEX</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 
 
 </head>
 
-<body onload="loadPokemon()">
+<body onload="showStartscreen()">
 
     <!-- ___________________________________________________________________________________ -->
     <div id="startscreen" class="startscreen">
         <h1>POKEDEX</h1>
-        <input id="selectedPokemon" type="text" placeholder="name of the pokemon"><button onclick="showPokemonpage()">search</button>
+        <input id="selectedPokemon" type="text" placeholder="name or id"><button onclick="loadPokemon()">search</button>
     </div>
 
     <!-- __________________________________________________________________________________________ -->
     <div id="pokemonpage" class="pokemonpage dnone">
         <div class="home-button">
-        <img onclick="showStartscreen()" src="home.png" class="home-img"> Zurück
+            <img onclick="showStartscreen()" src="img/home.png" class="home-img">
         </div>
         <div id="pokedex" class="pokedex">
             <h1 id="pokemonName">Name</h1>
@@ -31,6 +31,29 @@
 
         <div class="info-container">
             <img id="pokemonimage" class="pokemonimage">
+        </div>
+
+        <div class="fact-container">
+            <div class="fact">
+                <div>nr</div>
+                <div><b id="number">150</b></div>
+            </div>
+            <div class="fact">
+                <div>type</div>
+                <div><b id="type">Psycho</b></div>
+            </div>
+            <div class="fact">
+                <div>size</div>
+                <div><b id="size">0.4</b><b>m</b></div>
+            </div>
+            <div class="fact">
+                <div>weight</div>
+                <div><b id="weight">4</b><b>kg</b></div>
+            </div>
+            <div class="fact">
+                <div>xp</div>
+                <div><b id="xp">4</b></div>
+            </div>
         </div>
     </div>
     <!-- ____________________________________________________________________________________- -->
