@@ -49,7 +49,7 @@ async function loadPokemon() {
     let idFromInput = await document.getElementById('selectedPokemon').value;
     url = `https://pokeapi.co/api/v2/pokemon/${selectedPokemon}`;
 
-    if (pokemonsArray.includes(selectedPokemon) | idFromInput ==1) {
+    if (pokemonsArray.includes(selectedPokemon) || selectedPokemon > 0 && selectedPokemon < 1118) {
         let response = await fetch(url);
         currentPokemon = await response.json();
         idOfCurrentPokemon = await currentPokemon['id'];
